@@ -1,0 +1,3 @@
+[submodule "FileTransferClient"]
+	path = FileTransferClient
+	url = https://github.com/JowsNunez/FileTransferClient

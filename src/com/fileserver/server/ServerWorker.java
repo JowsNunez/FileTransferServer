@@ -10,7 +10,10 @@ import java.util.Arrays;
 
 /**
  *
- * @author Jose Alfredo Nuñez Aguirre
+ * @author JOSÉ ALFREDO NÚÑEZ AGUIRRE 
+ * HIRAM GARCIA HERMOSILLO
+ * KEVIN DANIEL RIOS RANCANO
+ * GABRIEL FRANCISCO PINUELAS RAMOS
  */
 public class ServerWorker implements Runnable {
 
@@ -55,7 +58,7 @@ public class ServerWorker implements Runnable {
                     this.socket.send(sendPacket);
 
                 } else {
-                    
+
                     System.out.println("Client:" +this.receivePacket.getSocketAddress() + "* * * File Request " + message);
                     // se verificara si el archivo solicitado existe, creando una instancia de File  
                     File file = new File(message);
@@ -76,7 +79,7 @@ public class ServerWorker implements Runnable {
                             // el offset aumenta hasta llegar al tamanio mas pequenio de los datos del paquete
                             offset += length;
                         }
-
+                        
                     } else {
                         // si el archivo no existe se envia un datagramPacket con el ensaje File NotFound
                         String msg = "File Not Found";
